@@ -6,7 +6,7 @@ function App() {
 
   const [isLight, setIsLight] = useState(true)
 
-  const handleThemeClick = () => setIsLight((isLight) => !isLight)
+  const handleClick = () => setIsLight((isLight) => !isLight)
 
 
   // replace 'false' with a state variable that can be toggled between true and false
@@ -17,7 +17,7 @@ function App() {
     <div className={appClass}>
       <header>
         <h2>Shopster</h2>
-        <button onClick={handleThemeClick}>Dark Mode</button>
+        <button onClick={handleClick}>{isLight ? "Light Mode" : "Dark Mode"}</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
