@@ -10,9 +10,14 @@ function ShoppingList({ items }) {
 
   function handleClick(e) {
     setSelectedCategories(e.target.value)
-
-
   }
+
+  const displayItems = items.filter((item) => {
+    if (selectedCategory === "All") return true
+
+    else return item.category === selectedCategory
+  })
+
 
   return (
     <div className="ShoppingList">
