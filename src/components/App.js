@@ -4,7 +4,7 @@ import itemData from "../data/items";
 
 function App() {
 
-  const [isLight, setIsLight] = useState(true)
+  const [isLight, setIsLight] = useState(false)
 
   const handleClick = () => setIsLight((isLight) => !isLight)
 
