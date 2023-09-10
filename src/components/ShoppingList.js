@@ -22,11 +22,11 @@ function ShoppingList({ items }) {
   return (
     <div className="ShoppingList">
       <div className="Filter">
-        <select name="filter">
-          <option onChange={handleClick} value="All">Filter by category</option>
-          <option onChange={handleClick} value="Produce">Produce</option>
-          <option onChange={handleClick} value="Dairy">Dairy</option>
-          <option onChange={handleClick} value="Dessert">Dessert</option>
+        <select name="filter" onChange={handleClick} >
+          <option value="All">Filter by category</option>
+          <option value="Produce">Produce</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Dessert">Dessert</option>
         </select>
       </div>
       <ul className="Items">
